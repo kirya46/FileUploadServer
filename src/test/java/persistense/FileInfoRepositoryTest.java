@@ -30,12 +30,13 @@ public class FileInfoRepositoryTest {
 
     @Before
     public void setUp() throws Exception {
+        repository.deleteAll();
         fileInfo = new FileInfo("FileName", "png", "dsfsdafsad", 2321.321);
     }
 
     @After
     public void tearDown() throws Exception {
-        if (repository.findOne(fileInfo.getId())!=null)repository.delete(fileInfo.getId());
+        repository.deleteAll();
     }
 
     @Test
@@ -87,8 +88,10 @@ public class FileInfoRepositoryTest {
 
 
         final List<FileInfo> all = repository.findAll();
+        System.out.println(all);
         assertNotNull(all);
-        assertNotEquals(0,all.size());
+//        assertNotEquals(1,all.size());
+        assertEquals(1,all.size());
     }
 
 
