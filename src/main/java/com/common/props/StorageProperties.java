@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class StorageProperties {
 
     /**
-     * Folder location for storing files
+     * Folder location for storing files. It is a root folder for storing images.
      */
     private  String location = "upload-dir";
     private final String tmp = location+"/tmp";

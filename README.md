@@ -8,6 +8,10 @@ Service for upload image files, with supported actions:
 - get file by id
 - delete file by id
 - delete allFiles
+
+By default all images will saved to <project_path>/upload-dir.
+For change destination upload folder go to: **<project_folder>/src/main/java/com/common/props**
+and change in `StorageProperties.java` `location` variable value from `upload-dir` to your custom folder.
  
 
 **Tech:**
