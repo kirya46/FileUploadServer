@@ -88,7 +88,7 @@ public class FileInfoRepositoryTest {
 
         final List<FileInfo> all = repository.findAll();
         assertNotNull(all);
-        assertEquals(1,all.size());
+        assertNotEquals(0,all.size());
     }
 
 
