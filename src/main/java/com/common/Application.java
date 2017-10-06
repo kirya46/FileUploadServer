@@ -29,7 +29,8 @@ public class Application  implements CommandLineRunner {
 
         System.out.println("\n===============================================");
         System.out.println(Application.class.getSimpleName() + " started...");
-        System.out.println("===============================================\n");
+        System.out.println("===============================================\n"); 
+        
     }
 
     @Bean
